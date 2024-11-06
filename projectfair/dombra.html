@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dombra bought</title>
+    <style>
+       body{
+        background-color: #225C80;
+        overflow-x: hidden;
+        height: 80vh; 
+       }
+        header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 10px;
+}
+
+header p{
+    border: 2px solid  white;
+    border-radius: 40px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color:white;
+    position: relative;
+    top: 40px;
+    
+}
+
+header h1{
+    font-family: "Anton", sans-serif;
+    position: relative;
+    top: 40px;
+}
+
+.content{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 40px;
+    position: relative;
+    left: -50px;
+   
+}
+
+.item{
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    left: 220px;
+    top: 120px;
+    transition: transform 0.3s ease; 
+    overflow: hidden; 
+   
+}
+
+.item:hover {
+    transform: scale(1.1); 
+    z-index: 1; 
+}
+
+.item_1{
+    width: 300px;
+    position: relative;
+    left: 280px;
+}
+.item_1 img{
+    width: 70%;
+    position: relative;
+    top: 40px;
+    left: 45px;
+    border-radius: 14px;
+    
+}
+
+.item_2{
+    width: 300px;
+    position: relative;
+    left: 620px;
+}
+
+.item_2 img{
+    width: 70%;
+    position: relative;
+    left: 40px;
+    top: 30px;
+    border-radius: 15px;
+}
+
+.item_3{
+    width: 300px;
+    position: relative;
+    left:-55px;
+}
+
+.item_3 img{
+    width: 200px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+.item_4{
+    width: 300px;
+    position: relative;
+    left: 280px;
+}
+.item_4 img{
+    width: 70%;
+    position: relative;
+    top: 40px;
+    left: 45px;
+    border-radius: 14px;
+    
+}
+
+.item_5{
+    width: 300px;
+    position: relative;
+    left: 280px;
+}
+.item_5 img{
+    width: 70%;
+    position: relative;
+    top: 40px;
+    left: 45px;
+    border-radius: 14px;
+}
+
+.item_6{
+    width: 300px;
+    position: relative;
+    left: 280px;
+}
+.item_6 img{
+    width: 70%;
+    position: relative;
+    top: 40px;
+    left: 45px;
+    border-radius: 14px;
+}
+
+.price{
+    position: relative;
+    left: -40px;
+}
+.dombra{
+    position: relative;
+    top: -960px;
+    left: 330px;
+}
+
+.uru{
+    position: relative;
+    top: -1060px;
+    left: 700px;
+}
+.kobyz{
+    position: relative;
+    top: -1160px;
+    left: 1030px;
+}
+
+.drums{
+    position: relative;
+    top: -860px;
+    left: 350px;
+}
+
+.uku{
+    position: relative;
+    top: -960px;
+    left: 700px;
+}
+
+.gitara{
+    position: relative;
+    top: -1060px;
+    left: 1030px;
+}
+
+button{
+    background-color: #64F555;
+    cursor: pointer;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+
+.button-img{
+    position: relative;
+    left: -60px;
+}
+.button-img .dombra{
+    position: relative;
+    top: -1480px;
+    left: 400px;
+}
+
+.button-img .uru{
+    position: relative;
+    top: -1510px;
+    left: 730px;
+}
+
+.button-img .kobyz{
+    position: relative;
+    top: -1540px;
+    left: 1070px;
+}
+
+.button-img .drums{
+    position: relative;
+    top: -1140px;
+    left: 400px;
+}
+
+.button-img .uku{
+    position: relative;
+    top: -1160px;
+    left: 730px;
+}
+
+.button-img .gitara{
+    position: relative;
+    top: -1187px;
+    left: 1070px;
+}
+
+footer {
+            margin-top: 50px;
+    background-color: #031d45; 
+    color: white; 
+    margin-top: 240px; 
+    text-align: center; 
+    position: relative; 
+    bottom: -60px;
+    width: 100%;
+    margin: 0;
+}
+
+footer h4 {
+    margin: 0; 
+    font-size: 24px; 
+    font-family: "Anton", sans-serif; 
+}
+
+footer p {
+    margin: 5px 0; 
+}
+
+footer a {
+    color: white; 
+    margin: 0 10px; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+footer hr {
+    border: 1px solid white; 
+    margin: 20px 0; 
+}
+
+
+
+@media (max-width: 376px) {
+            .content {
+                width: 90%; 
+                left: 0; 
+                grid-template-columns: repeat(2, 1fr); /* 2 бағана */
+            }
+            .item {
+                left: 0; 
+                top: 20px; 
+            }
+        }
+
+        @media (max-width: 376px) {
+            header {
+                flex-direction: column; 
+                align-items: center; 
+            }
+            header p {
+                margin-bottom: 10px; 
+            }
+            header h1 {
+                margin-bottom: 20px; 
+            }
+            .content {
+                grid-template-columns: 1fr; 
+            }
+            .item {
+                left: 0; 
+                top: 20px; 
+                height: auto; 
+            }
+            .price {
+                grid-template-rows: 1fr;
+                text-align: center; 
+                left: 0; 
+            }
+            .button-img {
+                text-align: center; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer h4 {
+                font-size: 20px; 
+            }
+            footer p {
+                font-size: 14px; 
+            }
+            button {
+                padding: 4px 50px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+       <a href="projectfair1.html" style="text-decoration: none;"><p>Home</p></a> 
+        <a href="work.html" style="text-decoration: none;"><p>Work</p></a>
+        <h1>Nyshan</h1>
+       <a href="artist.html" style="text-decoration: none;"><p>Artist</p></a> 
+        <a href="contact.html" style="text-decoration: none;"><p>Contact</p></a>
+     </header>
+
+     <div class="content">
+        <div class="item item_1"> <img src="C:\Users\kommu\Downloads\Dombra.jpeg"></div>
+        <div class="item item_2"> <img src="C:\Users\kommu\Downloads\kazakh-national-string-instrument-kylkobyz-260nw-1242814288.webp" alt=""></div>
+        <div class="item item_3"> <img src="C:\Users\kommu\Downloads\sybyzgy.jpg" alt=""></div>
+        <div class="item item_4"> <img src="C:\Users\kommu\Downloads\Drums.jpeg" alt=""></div>
+        <div class="item item_5"> <img src="C:\Users\kommu\Downloads\Без названия (92).jpeg" alt=""></div>
+        <div class="item item_6"> <img src="C:\Users\kommu\Downloads\Black acoustic guitar containing guitar, black, and rock, an Arts & Entertainment Photo by Mexico stock images.jpeg" alt=""></div>
+         </div>
+    
+         <div class="price">
+         <div class="dombra">
+            <h1>Kara Dombra</h1>
+            <h2>120.000tenge</h2>
+      </div>
+      <div class="uru">
+         <h1>Sybyzgy</h1>
+         <h2>10.000tenge</h2>
+      </div>
+      <div class="kobyz">
+         <h1>Kobyz</h1>
+         <h2>60.000tenge</h2>
+      </div>
+      <div class="drums">
+         <h1>Dayulpaz</h1>
+         <h2>30.000tenge</h2>
+      </div>
+      <div class="uku">
+        <h1>Ukelele</h1>
+        <h2>8,000tenge</h2>
+      </div>
+      <div class="gitara">
+        <h1>Gitara</h1>
+        <h2>60.000tenge</h2>
+      </div>
+      </div>
+
+      <div class="button-img">
+        <div class="dombra">
+           <button>BUY</button>
+     </div>
+     <div class="uru">
+        <button>BUY</button>
+     </div>
+     <div class="kobyz">
+        <button>BUY</button>
+     </div>
+     <div class="drums">
+        <button>BUY</button>
+     </div>
+     <div class="uku">
+        <button>BUY</button>
+     </div>
+     <div class="gitara">
+        <button>BUY</button>
+     </div>
+     </div>
+
+     
+    
+     <footer>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Email: Nyshanbusiness@gmail.com</p>
+            <p>Phone: +7 (705) 586-27-02</p>
+            <div>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <hr>
+        <div>
+</body>
+</html>
